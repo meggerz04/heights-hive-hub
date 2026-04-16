@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Instagram } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import InstagramIcon from "@/components/InstagramIcon";
 import heroImg from "@/assets/hero-heights.jpg";
 
 const HeroSection = () => {

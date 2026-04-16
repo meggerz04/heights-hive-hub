@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Instagram } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import InstagramIcon from "@/components/InstagramIcon";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [

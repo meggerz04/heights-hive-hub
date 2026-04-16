@@ -1,4 +1,5 @@
-import { Instagram, Heart } from "lucide-react";
+import { Heart } from "lucide-react";
+import InstagramIcon from "@/components/InstagramIcon";
 import { Link } from "react-router-dom";
 
 const Footer = () => {

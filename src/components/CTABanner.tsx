@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Instagram, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import InstagramIcon from "@/components/InstagramIcon";
 
 const CTABanner = () => {
   return (

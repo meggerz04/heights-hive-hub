@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Handshake, Megaphone, CalendarHeart, ArrowRight, Instagram } from "lucide-react";
+import { Handshake, Megaphone, CalendarHeart, ArrowRight } from "lucide-react";
+import InstagramIcon from "@/components/InstagramIcon";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
