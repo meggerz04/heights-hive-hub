@@ -8,7 +8,7 @@ import logo from "@/assets/logo-transparent.png";
 const navLinks = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
-  { to: "/get-involved", label: "Get Involved" },
+  { to: "/openshop", label: "OpenShop" },
 ];
 
 const Navbar = () => {

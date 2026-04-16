@@ -5,7 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import About from "./pages/About.tsx";
-import GetInvolved from "./pages/GetInvolved.tsx";
+import OpenShop from "./pages/OpenShop.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -19,7 +19,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
-          <Route path="/get-involved" element={<GetInvolved />} />
+          <Route path="/openshop" element={<OpenShop />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
