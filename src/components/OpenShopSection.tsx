@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { Lightbulb, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import openshopIcon from "@/assets/openshop-icon.png";
 
 const OpenShopSection = () => {
   return (
@@ -12,8 +13,8 @@ const OpenShopSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent/20 mb-6">
-              <Lightbulb className="w-8 h-8 text-accent-foreground" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-foreground/10 mb-6 overflow-hidden">
+              <img src={openshopIcon} alt="OpenShop" className="w-12 h-12 object-contain" />
             </div>
 
             <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-4">
