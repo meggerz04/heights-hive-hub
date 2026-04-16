@@ -19,7 +19,7 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               <Link to="/" className="font-body text-sm opacity-80 hover:opacity-100 transition-opacity">Home</Link>
               <Link to="/about" className="font-body text-sm opacity-80 hover:opacity-100 transition-opacity">About</Link>
-              <Link to="/get-involved" className="font-body text-sm opacity-80 hover:opacity-100 transition-opacity">Get Involved</Link>
+              <Link to="/openshop" className="font-body text-sm opacity-80 hover:opacity-100 transition-opacity">OpenShop</Link>
             </div>
           </div>
           <div>
@@ -31,6 +31,12 @@ const Footer = () => {
               className="inline-flex items-center gap-2 font-body text-sm opacity-80 hover:opacity-100 transition-opacity"
             >
               <InstagramIcon className="w-5 h-5" /> @shoptheheightsjc
+            </a>
+            <a
+              href="mailto:shoptheheightsjc@gmail.com?subject=Website%20Inquiry"
+              className="inline-flex items-center gap-2 font-body text-sm opacity-80 hover:opacity-100 transition-opacity"
+            >
+              ✉ Get In Touch
             </a>
           </div>
         </div>
