@@ -94,7 +94,7 @@ const GetInvolved = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-primary text-primary-foreground font-body font-semibold px-8 py-4 rounded-full hover:scale-105 transition-all"
             >
-              <Instagram className="w-5 h-5" />
+              <InstagramIcon className="w-5 h-5" />
               Message Us on Instagram
               <ArrowRight className="w-4 h-4" />
             </a>

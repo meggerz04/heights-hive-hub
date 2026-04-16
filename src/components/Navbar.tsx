@@ -40,7 +40,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors"
           >
-            <Instagram className="w-5 h-5" />
+            <InstagramIcon className="w-5 h-5" />
           </a>
         </div>
 
@@ -78,7 +78,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-muted-foreground"
               >
-                <Instagram className="w-5 h-5" /> Follow us
+                <InstagramIcon className="w-5 h-5" /> Follow us
               </a>
             </div>
           </motion.div>

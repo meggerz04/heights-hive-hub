@@ -23,7 +23,7 @@ const CTABanner = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-primary-foreground text-foreground font-body font-semibold px-8 py-4 rounded-full hover:scale-105 transition-all"
           >
-            <Instagram className="w-5 h-5" />
+            <InstagramIcon className="w-5 h-5" />
             Follow @shoptheheightsjc
             <ArrowRight className="w-4 h-4" />
           </a>

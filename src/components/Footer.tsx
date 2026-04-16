@@ -29,7 +29,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 font-body text-sm opacity-80 hover:opacity-100 transition-opacity"
             >
-              <Instagram className="w-5 h-5" /> @shoptheheightsjc
+              <InstagramIcon className="w-5 h-5" /> @shoptheheightsjc
             </a>
           </div>
         </div>

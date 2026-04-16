@@ -50,7 +50,7 @@ const HeroSection = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-primary hover:bg-primary/90 text-primary-foreground font-body font-semibold px-8 py-4 rounded-full transition-all hover:scale-105"
             >
-              <Instagram className="w-5 h-5" />
+              <InstagramIcon className="w-5 h-5" />
               See What's Happening Now
               <ArrowRight className="w-4 h-4" />
             </a>
