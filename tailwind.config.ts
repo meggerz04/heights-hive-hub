@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ['Urbanist', 'sans-serif'],
-        body: ['Epilogue', 'sans-serif'],
+        heading: ['Lora', 'serif'],
+        body: ['Nunito Sans', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
