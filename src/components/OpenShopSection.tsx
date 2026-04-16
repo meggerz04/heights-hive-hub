@@ -22,13 +22,13 @@ const OpenShopSection = () => {
               OpenShop gives you a simple step-by-step plan to become a vendor — including where to apply, what you need, and how to get started.
             </p>
 
-            <a
-              href="#"
+            <Link
+              to="/openshop"
               className="inline-flex items-center gap-3 bg-foreground text-primary-foreground font-body font-semibold px-8 py-4 rounded-full hover:opacity-90 transition-all hover:scale-105"
             >
               Explore OpenShop
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </Link>
           </motion.div>
         </div>
       </div>
