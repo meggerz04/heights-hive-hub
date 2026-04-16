@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
-import { Lightbulb, CheckCircle, ArrowRight, MessageSquare, MapPin, ClipboardList } from "lucide-react";
+import { CheckCircle, ArrowRight, MessageSquare, MapPin, ClipboardList } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import openshopLogo from "@/assets/openshop-logo.png";
+import openshopIcon from "@/assets/openshop-icon.png";
 
 const benefits = [
   "A personalized list of the best Jersey City markets based on your wants and needs",
