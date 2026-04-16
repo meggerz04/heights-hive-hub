@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { CheckCircle, ArrowRight, MessageSquare, MapPin, ClipboardList } from "lucide-react";
+import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import openshopLogo from "@/assets/openshop-logo.png";
@@ -53,13 +54,13 @@ const OpenShop = () => {
               OpenShop gives you a step-by-step plan to go from idea to your first market, including where to apply, what you need, and how to get started.
             </p>
 
-            <a
-              href="#start"
+            <Link
+              to="/openshop/app"
               className="inline-flex items-center gap-3 bg-foreground text-background font-body font-semibold px-8 py-4 rounded-full hover:opacity-90 transition-all hover:scale-105"
             >
               Start My Vendor Plan
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>
@@ -151,13 +152,13 @@ const OpenShop = () => {
               OpenShop is created by Shop The Heights, a trusted local platform supporting small businesses and driving foot traffic across the Heights community.
             </p>
 
-            <a
-              href="#start"
+            <Link
+              to="/openshop/app"
               className="inline-flex items-center gap-3 bg-foreground text-background font-body font-semibold px-8 py-4 rounded-full hover:opacity-90 transition-all hover:scale-105"
             >
               Start Using OpenShop
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>
