@@ -44,9 +44,7 @@ const OpenShop = () => {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent/20 mb-6">
-              <Lightbulb className="w-8 h-8 text-accent-foreground" />
-            </div>
+            <img src={openshopLogo} alt="OpenShop" className="h-14 md:h-20 mx-auto mb-8" />
 
             <h1 className="font-heading text-4xl md:text-6xl font-extrabold text-foreground mb-6">
               Become a Jersey City farmers market vendor — faster
