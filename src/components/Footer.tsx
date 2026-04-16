@@ -32,12 +32,6 @@ const Footer = () => {
             >
               <InstagramIcon className="w-5 h-5" /> @shoptheheightsjc
             </a>
-            <a
-              href="mailto:shoptheheightsjc@gmail.com?subject=Website%20Inquiry"
-              className="inline-flex items-center gap-2 font-body text-sm opacity-80 hover:opacity-100 transition-opacity"
-            >
-              ✉ Get In Touch
-            </a>
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-primary-foreground/20 text-center">
