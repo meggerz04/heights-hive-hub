@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-12">
           <div>
-            <img src={logo} alt="Shop The Heights" className="h-16 w-auto mb-4 brightness-0 invert" />
+            <img src={logo} alt="Shop The Heights" className="h-24 w-auto mb-4 brightness-0 invert" />
             <p className="font-body text-sm opacity-80 leading-relaxed">
               Supporting the local small businesses that make up the community fabric of Jersey City Heights.
             </p>
