@@ -16,17 +16,17 @@ const OpenShopSection = () => {
             </div>
 
             <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Thinking about starting a business in the Heights?
+              Thinking about selling at a Jersey City farmers market?
             </h2>
             <p className="font-body text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              OpenShop helps aspiring entrepreneurs navigate the process of opening a local business — from finding a space to connecting with the community.
+              OpenShop gives you a simple step-by-step plan to become a vendor — including where to apply, what you need, and how to get started.
             </p>
 
             <a
               href="#"
               className="inline-flex items-center gap-3 bg-foreground text-primary-foreground font-body font-semibold px-8 py-4 rounded-full hover:opacity-90 transition-all hover:scale-105"
             >
-              Learn About OpenShop
+              Explore OpenShop
               <ArrowRight className="w-4 h-4" />
             </a>
           </motion.div>
