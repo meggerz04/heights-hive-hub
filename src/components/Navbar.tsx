@@ -8,7 +8,7 @@ import logo from "@/assets/logo-transparent.png";
 const navLinks = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
-  { to: "/get-involved", label: "Get Involved" },
+  { to: "/openshop", label: "OpenShop" },
 ];
 
 const Navbar = () => {
@@ -35,6 +35,12 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
+          <a
+            href="mailto:shoptheheightsjc@gmail.com?subject=Website%20Inquiry"
+            className="font-body text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+          >
+            Get In Touch
+          </a>
           <a
             href="https://www.instagram.com/shoptheheightsjc"
             target="_blank"
@@ -73,6 +79,12 @@ const Navbar = () => {
                   {link.label}
                 </Link>
               ))}
+              <a
+                href="mailto:shoptheheightsjc@gmail.com?subject=Website%20Inquiry"
+                className="font-body text-base font-medium text-muted-foreground"
+              >
+                Get In Touch
+              </a>
               <a
                 href="https://www.instagram.com/shoptheheightsjc"
                 target="_blank"
