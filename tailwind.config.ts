@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ['Syne', 'sans-serif'],
-        body: ['Plus Jakarta Sans', 'sans-serif'],
+        heading: ['Urbanist', 'sans-serif'],
+        body: ['Epilogue', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
