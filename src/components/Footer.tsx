@@ -38,6 +38,9 @@ const Footer = () => {
           <p className="font-body text-xs opacity-60 flex items-center justify-center gap-1">
             Made with <Heart className="w-3 h-3 text-primary" /> in Jersey City Heights
           </p>
+          <p className="font-body text-xs opacity-60 mt-2">
+            © 2026 Shop The Heights. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
