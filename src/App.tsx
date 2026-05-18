@@ -6,7 +6,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import About from "./pages/About.tsx";
 import OpenShop from "./pages/OpenShop.tsx";
-import OpenShopApp from "./pages/OpenShopApp.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -21,7 +20,6 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/openshop" element={<OpenShop />} />
-          <Route path="/openshop/app" element={<OpenShopApp />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
