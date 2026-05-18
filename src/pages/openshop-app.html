@@ -229,6 +229,12 @@ const HHS_URL        = 'https://www.jerseycitynj.gov/cityhall/health';
 const _usp = new URLSearchParams(window.location.search);
 let isUnlocked = _usp.get('unlocked') === 'true';
 
+// In the Claude artifact environment, call Anthropic directly (auth is handled automatically).
+// When hosted on Vercel or any real website, route through the /api/chat proxy instead.
+const API_ENDPOINT = window.storage
+  ? 'https://api.anthropic.com/v1/messages'
+  : '/api/chat';
+
 // ── STATE ──────────────────────────────────────────────────────────────────
 let checks={},notes={},openNotes={},activeCL=null,autoCks=new Set(),lastPct=0,busy=false,history=[];
 let pendingFeedback=false,stripeOpened=false;
@@ -724,7 +730,7 @@ BEHAVIOR: Ask about the vendor's business and goals before recommending markets.
 async function callAPI(msg){
   history.push({role:'user',content:msg});setBusy(true);showTyping();
   try{
-    const res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1000,system:SYS,messages:history})});
+    const res=await fetch(API_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','anthropic-version':'2023-06-01'},body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1000,system:SYS,messages:history})});
     const data=await res.json();rmTyping();
     const reply=data.content?.map(b=>b.type==='text'?b.text:'').join('')||"I'm sorry, I had trouble responding. Please try again.";
     history.push({role:'assistant',content:reply});
