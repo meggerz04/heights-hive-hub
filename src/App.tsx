@@ -21,6 +21,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/openshop" element={<OpenShop />} />
+          <Route path="/openshop/app" element={<OpenShopApp />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
