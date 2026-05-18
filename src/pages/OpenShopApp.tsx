@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
-
-const SRC_DOC = ``;
+import srcDoc from "./openshop-app.html?raw";
 
 const OpenShopApp = () => {
   const iframeRef = useRef<HTMLIFrameElement>(null);
@@ -20,7 +19,7 @@ const OpenShopApp = () => {
   return (
     <iframe
       ref={iframeRef}
-      srcDoc={SRC_DOC}
+      srcDoc={srcDoc}
       title="OpenShop App"
       style={{
         position: "fixed",
