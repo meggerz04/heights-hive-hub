@@ -233,7 +233,10 @@ const MVF_PDF        = 'https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Se
 const LIC_PDF        = 'https://cdnsm5-hosted.civiclive.com/UserFiles/Servers/Server_6189660/File/City%20Hall/Human%20Health%20and%20Services/ENVIRONMENTAL/2025/2025_08_01_HEALTH%20LICENSE%20PRICES%20UPDATED%20(2).pdf';
 
 const _usp = new URLSearchParams(window.location.search);
-let isUnlocked = _usp.get('unlocked') === 'true';
+const justPaid = _usp.get('unlocked') === 'true';
+let isUnlocked = _usp.get('unlocked') === 'true' || localStorage.getItem('os_paid') === '1';
+// Persist unlock to localStorage so it survives future visits
+if (_usp.get('unlocked') === 'true') { try { localStorage.setItem('os_paid','1'); } catch(e){} }
 const API_ENDPOINT = window.storage ? 'https://api.anthropic.com/v1/messages' : '/api/chat';
 
 // ── STORAGE ABSTRACTION ────────────────────────────────────────────────────
@@ -263,6 +266,23 @@ async function updateStoredSession(){try{sessionData.stepsCompleted=countChecks(
 async function storeFeedbackQuestion(q){try{const fb=await loadFeedback();fb.push({question:q.slice(0,600),sessionId:sessionData.id,ts:Date.now()});if(fb.length>300)fb.splice(0,fb.length-300);await store.set('os_feedback',JSON.stringify(fb),true);}catch{}}
 async function getGeoLocation(){try{const r=await fetch('https://ipapi.co/json/');const d=await r.json();if(d.city){sessionData.city=d.city;sessionData.region=d.region||null;sessionData.country=d.country_name||null;updateStoredSession();}}catch{}}
 async function initSession(){try{let uid;try{const r=await store.get('os_uid');uid=r.value;}catch{uid='u_'+Math.random().toString(36).slice(2,9)+Date.now().toString(36).slice(-4);try{await store.set('os_uid',uid);}catch{}}sessionData.userId=uid;const users=await loadUsers();sessionData.isNewUser=!users[uid];users[uid]={firstSeen:users[uid]?.firstSeen||Date.now(),sessionCount:(users[uid]?.sessionCount||0)+1,lastSeen:Date.now()};await store.set('os_users',JSON.stringify(users),true);await updateStoredSession();}catch{}}
+
+// ── CONTEXT PERSISTENCE ────────────────────────────────────────────────────
+function saveChatContext(){
+  try{localStorage.setItem('os_ctx',JSON.stringify({history:history.slice(-40),activeCL,checks,notes,autoCks:[...autoCks]}));}catch(e){}
+}
+function loadChatContext(){
+  try{
+    const s=JSON.parse(localStorage.getItem('os_ctx')||'null');
+    if(!s)return false;
+    if(s.history?.length)history=s.history;
+    if(s.activeCL){activeCL=s.activeCL;lastPct=0;}
+    if(s.checks)checks=s.checks;
+    if(s.notes)notes=s.notes;
+    if(s.autoCks)autoCks=new Set(s.autoCks);
+    return true;
+  }catch(e){return false;}
+}
 
 // ── FORM LINK BADGES ───────────────────────────────────────────────────────
 const FL  = `<a class="form-link" href="${MVF_PDF}" target="_blank" rel="noopener">↓ Download forms</a>`;
@@ -370,11 +390,15 @@ function toggleItem(id){if(!isUnlocked){let tot=0;CL[activeCL].sections.forEach(
 function toggleNote(id){openNotes[id]=!openNotes[id];renderCL();if(openNotes[id])setTimeout(()=>{const el=document.getElementById('ni-'+id);if(el)el.focus();},50);}
 function saveNote(id){const el=document.getElementById('ni-'+id);if(el)notes[id]=el.value.trim();openNotes[id]=false;renderCL();}
 function delNote(id){delete notes[id];openNotes[id]=false;renderCL();}
-function setCL(k){activeCL=k;lastPct=0;sessionData.checklistType=k;renderCL();updateProg(false);updateStoredSession();}
+function setCL(k){activeCL=k;lastPct=0;sessionData.checklistType=k;renderCL();updateProg(false);updateStoredSession();saveChatContext();}
 function resetCL(){activeCL=null;renderCL();}
 function autoCheck(ids){ids.forEach(id=>{checks[id]=true;autoCks.add(id);});}
 function openStripe(){window.open(STRIPE_LINK,'_blank');sessionData.paywallViewed=true;updateStoredSession();}
-function unlockAccess(){isUnlocked=true;sessionData.paymentCompleted=true;updateStoredSession();renderCL();updateProg(false);}
+function unlockAccess(){
+  isUnlocked=true;
+  try{localStorage.setItem('os_paid','1');}catch(e){}
+  sessionData.paymentCompleted=true;updateStoredSession();renderCL();updateProg(false);
+}
 
 // ── TEMP VENDOR APPLICATION FORM ───────────────────────────────────────────
 function openTempVendorForm(){
@@ -663,7 +687,7 @@ async function callAPI(msg){
     if(age&&!sessionData.age){sessionData.age=age;demographicsAsked=true;}
     if(location&&!sessionData.locationReported){sessionData.locationReported=location;demographicsAsked=true;}
     sessionData.exchanges++;sessionData.totalMsgs=history.filter(m=>m.role==='user').length;
-    updateStoredSession();addMsg(reply,'b');
+    updateStoredSession();saveChatContext();addMsg(reply,'b');
     if(unknown){pendingFeedback=true;setTimeout(()=>addMsg("Would you like to submit this question to the OpenShop team? We'll review it to help improve the tool.",'b',["Yes, submit question","No thanks"]),300);}
     if(checkIds.length>0||clKey){updateProg(true);if(checkIds.length>0){setTimeout(()=>{const tb=document.getElementById('tab-cl');tb.style.background='#1D9E75';tb.style.color='white';setTimeout(()=>{if(!tb.classList.contains('on')){tb.style.background='';tb.style.color='';}},2000);},500);}}
   }catch(e){rmTyping();addMsg("Sorry, I ran into a connection issue. Please try again in a moment.",'b');}
@@ -685,7 +709,24 @@ inpEl.addEventListener('input',()=>{inpEl.style.height='auto';inpEl.style.height
 window.addEventListener('message',e=>{if(e.data==='OPENSHOP_UNLOCK'&&!isUnlocked){isUnlocked=true;renderCL();updateProg(false);}});
 initSession();
 getGeoLocation();
-setTimeout(()=>{addMsg(`Welcome to **OpenShop** 👋\n\nI'm your personal guide to becoming an approved vendor at a Jersey City farmers market — brought to you by **Shop the Heights JC**.\n\nTell me about your business and I'll recommend the right markets, identify your vendor type, and build your personalized checklist — with live progress tracking every step of the way.\n\nTo get started — what do you sell, and are you new to farmers markets?`,'b',["I sell food products","I sell non-food / crafts","Show me all available markets","What permits do I need?"]);},300);
+const hasCtx=loadChatContext();
+const clLabel=activeCL?CL[activeCL]?.label:null;
+const returningPaid=isUnlocked&&!justPaid;
+const welcomeMsg=justPaid
+  ?(hasCtx&&clLabel
+    ?`🎉 You're in! Welcome to **OpenShop** — full access unlocked.\n\nI remember you were working toward becoming a **${clLabel}** — your complete checklist is ready in the **My Checklist** tab, right where you left off.\n\n**Good news:** as long as you return to this tool on the same browser and device, you won't have to pay again.\n\nAnything else I can help you with?`
+    :`🎉 You're in! Welcome to **OpenShop** — full access unlocked.\n\nYour complete vendor launch plan is ready in the **My Checklist** tab. Every step, every form link, and your full progress tracker are all there.\n\n**Good news:** as long as you return to this tool on the same browser and device, you won't have to pay again.\n\nNow let's get to work — what do you sell, and are you new to farmers markets?`)
+  :returningPaid
+  ?(hasCtx&&clLabel
+    ?`Welcome back to **OpenShop**! 👋 Great to see you again.\n\nI remember you were working toward becoming a **${clLabel}**. Your checklist and conversation context are right where you left them — head to the **My Checklist** tab to continue.\n\n**Reminder:** as long as you return using the same browser and device, you'll always have full access without paying again.\n\nIs there anything I can help you with today?`
+    :`Welcome back to **OpenShop**! 👋 Great to see you again.\n\nYou have full access to your complete vendor launch plan. Head to the **My Checklist** tab to pick up where you left off.\n\n**Reminder:** as long as you return to this tool using the same browser and device, you'll always have full access without paying again.\n\nIs there anything I can help you with today?`)
+  :(hasCtx
+    ?`Welcome back to **OpenShop**! 👋\n\nI still have our previous conversation on file — just continue where you left off or ask me something new.\n\nWhat can I help you with today?`
+    :`Welcome to **OpenShop** 👋\n\nI'm your personal guide to becoming an approved vendor at a Jersey City farmers market — brought to you by **Shop the Heights JC**.\n\nTell me about your business and I'll recommend the right markets, identify your vendor type, and build your personalized checklist — with live progress tracking every step of the way.\n\nTo get started — what do you sell, and are you new to farmers markets?`);
+const welcomeChips=(returningPaid||hasCtx)
+  ?["Continue my checklist","Show me all markets","I have a question"]
+  :["I sell food products","I sell non-food / crafts","Show me all available markets","What permits do I need?"];
+setTimeout(()=>{addMsg(welcomeMsg,'b',welcomeChips);},300);
 </script>
 </body>
 </html>
