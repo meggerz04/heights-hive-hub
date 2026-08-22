@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-foreground text-primary-foreground py-10">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-12">
+        <div className="grid md:grid-cols-4 gap-12">
           <div>
             <img src={logo} alt="Shop The Heights" className="h-32 w-auto mb-4 brightness-0 invert" />
             <p className="font-body text-sm opacity-80 leading-relaxed">
@@ -19,6 +19,11 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               <Link to="/" className="font-body text-sm opacity-80 hover:opacity-100 transition-opacity">Home</Link>
               <Link to="/about" className="font-body text-sm opacity-80 hover:opacity-100 transition-opacity">About</Link>
+            </div>
+          </div>
+          <div>
+            <h4 className="font-heading text-lg font-semibold mb-4">Solutions</h4>
+            <div className="flex flex-col gap-2">
               <Link to="/vendorpath" className="font-body text-sm opacity-80 hover:opacity-100 transition-opacity">VendorPath</Link>
               <a
                 href="https://getopenshop.com"
@@ -42,6 +47,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
+
         <div className="mt-12 pt-8 border-t border-primary-foreground/20 text-center">
           <p className="font-body text-xs opacity-60 flex items-center justify-center gap-1">
             Made with <Heart className="w-3 h-3 text-primary" /> in Jersey City Heights
