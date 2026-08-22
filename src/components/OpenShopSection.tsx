@@ -21,14 +21,14 @@ const OpenShopSection = () => {
               Thinking about selling at a Jersey City farmers market?
             </h2>
             <p className="font-body text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              OpenShop gives you a simple step-by-step plan to become a vendor — including where to apply, what you need, and how to get started.
+              VendorPath gives you a simple step-by-step plan to become a vendor — including where to apply, what you need, and how to get started.
             </p>
 
             <Link
               to="/openshop"
               className="inline-flex items-center gap-3 bg-foreground text-primary-foreground font-body font-semibold px-8 py-4 rounded-full hover:opacity-90 transition-all hover:scale-105"
             >
-              Explore OpenShop
+              Explore VendorPath
               <ArrowRight className="w-4 h-4" />
             </Link>
           </motion.div>
