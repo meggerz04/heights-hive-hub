@@ -3,7 +3,7 @@ import { CheckCircle, ArrowRight, MessageSquare, MapPin, ClipboardList } from "l
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import openshopLogo from "@/assets/openshop-logo.png";
+import vendorPathLogo from "@/assets/vendorpath-logo.png.asset.json";
 import openshopIcon from "@/assets/openshop-icon.png";
 
 const benefits = [
@@ -45,17 +45,17 @@ const OpenShop = () => {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <img src={openshopLogo} alt="OpenShop" className="h-16 md:h-24 mx-auto mb-8" />
+            <img src={vendorPathLogo.url} alt="VendorPath by OpenShop" className="h-16 md:h-24 mx-auto mb-8" />
 
             <h1 className="font-heading text-4xl md:text-6xl font-extrabold text-foreground mb-6">
               Become a Jersey City farmers market vendor — faster
             </h1>
             <p className="font-body text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
-              OpenShop gives you a step-by-step plan to go from idea to your first market, including where to apply, what you need, and how to get started.
+              VendorPath powered by OpenShop gives you a step-by-step plan to go from idea to your first market, including where to apply, what you need, and how to get started.
             </p>
 
             <Link
-              to="/openshop/app"
+              to="/vendorpath/app"
               className="inline-flex items-center gap-3 bg-foreground text-background font-body font-semibold px-8 py-4 rounded-full hover:opacity-90 transition-all hover:scale-105"
             >
               Start My Vendor Plan
@@ -146,14 +146,14 @@ const OpenShop = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Built for local businesses in Jersey City
+              Built in Jersey City for local vendors
             </h2>
             <p className="font-body text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-10">
-              OpenShop is created by Shop The Heights, a trusted local platform supporting small businesses and driving foot traffic across the Heights community.
+              VendorPath is powered by OpenShop, a platform designed to make it easier to start and operate a local business. It grew out of years of firsthand experience supporting small businesses and vendors through Shop the Heights and Jersey City’s local market community.
             </p>
 
             <Link
-              to="/openshop/app"
+              to="/vendorpath/app"
               className="inline-flex items-center gap-3 bg-foreground text-background font-body font-semibold px-8 py-4 rounded-full hover:opacity-90 transition-all hover:scale-105"
             >
               Start Using OpenShop
