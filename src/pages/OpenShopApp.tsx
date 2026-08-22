@@ -35,8 +35,9 @@ const OpenShopApp = () => {
           ref={iframeRef}
           src={TOOL_URL}
           title="VendorPath App"
-          className="w-full block border-none"
-          style={{ height: "calc(100vh - 4rem)" }}
+          scrolling="no"
+          className="w-full block border-none overflow-hidden"
+          style={{ height: "740px" }}
           allow="clipboard-write"
         />
       </main>
