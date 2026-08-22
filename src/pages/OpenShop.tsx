@@ -1,3 +1,4 @@
+import Seo from "@/components/Seo";
 import { motion } from "framer-motion";
 import { CheckCircle, ArrowRight, MessageSquare, MapPin, ClipboardList } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -35,6 +36,11 @@ const steps = [
 const OpenShop = () => {
   return (
     <div className="min-h-screen">
+      <Seo
+        title="VendorPath — Become a Jersey City Farmers Market Vendor"
+        description="VendorPath, powered by OpenShop, gives you a step-by-step plan to become a Jersey City farmers market vendor: market matches, permits, and applications."
+        path="/vendorpath"
+      />
       <Navbar />
 
       {/* HERO */}
