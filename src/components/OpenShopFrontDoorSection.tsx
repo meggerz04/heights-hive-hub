@@ -38,12 +38,13 @@ const OpenShopFrontDoorSection = () => {
           </span>
 
           <h2 className="font-heading text-3xl md:text-5xl font-bold text-background mb-4">
-            OpenShop is the front door to starting your business
+            OpenShop is the front door to opening a local business
           </h2>
           <p className="font-body text-lg text-background/70 max-w-2xl mx-auto mb-12">
-            A growing set of tools that help everyday people open storefronts in their
-            community — starting right here in Jersey City.
+            A platform built to make the path to opening and operating a brick-and-mortar
+            business simpler — starting right here in Jersey City.
           </p>
+
 
           <div className="grid md:grid-cols-3 gap-8 mb-12 text-left">
             {highlights.map((item, i) => (
