@@ -159,7 +159,7 @@ const OpenShop = () => {
               to="/vendorpath/app"
               className="inline-flex items-center gap-3 bg-foreground text-background font-body font-semibold px-8 py-4 rounded-full hover:opacity-90 transition-all hover:scale-105"
             >
-              Start Using OpenShop
+              Start Using VendorPath
               <ArrowRight className="w-4 h-4" />
             </Link>
           </motion.div>
