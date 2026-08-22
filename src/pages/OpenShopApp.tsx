@@ -1,6 +1,9 @@
 import { useEffect, useRef } from "react";
-import srcDoc from "./openshop-app.html?raw";
 import Seo from "@/components/Seo";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
+const TOOL_URL = "https://open-shop-dun.vercel.app/";
 
 const OpenShopApp = () => {
   const iframeRef = useRef<HTMLIFrameElement>(null);
@@ -18,31 +21,27 @@ const OpenShopApp = () => {
   }, []);
 
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <Seo
         title="VendorPath App — Jersey City Market Vendor Guide"
         description="Your personalized VendorPath setup guide for becoming a Jersey City farmers market vendor."
         path="/vendorpath/app"
         image="/og/vendorpath.jpg"
-
         noindex
       />
-      <iframe
-      ref={iframeRef}
-      srcDoc={srcDoc}
-      title="OpenShop App"
-      style={{
-        position: "fixed",
-        inset: 0,
-        width: "100vw",
-        height: "100vh",
-        border: "none",
-        margin: 0,
-        padding: 0,
-      }}
-        allow="clipboard-write"
-      />
-    </>
+      <Navbar />
+      <main className="flex-1 pt-16 bg-background">
+        <iframe
+          ref={iframeRef}
+          src={TOOL_URL}
+          title="VendorPath App"
+          className="w-full block border-none"
+          style={{ height: "calc(100vh - 4rem)" }}
+          allow="clipboard-write"
+        />
+      </main>
+      <Footer />
+    </div>
   );
 };
 
