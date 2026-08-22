@@ -20,6 +20,14 @@ const Footer = () => {
               <Link to="/" className="font-body text-sm opacity-80 hover:opacity-100 transition-opacity">Home</Link>
               <Link to="/about" className="font-body text-sm opacity-80 hover:opacity-100 transition-opacity">About</Link>
               <Link to="/vendorpath" className="font-body text-sm opacity-80 hover:opacity-100 transition-opacity">VendorPath</Link>
+              <a
+                href="https://getopenshop.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-body text-sm opacity-80 hover:opacity-100 transition-opacity"
+              >
+                OpenShop
+              </a>
             </div>
           </div>
           <div>
