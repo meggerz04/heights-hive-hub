@@ -45,9 +45,7 @@ const OpenShop = () => {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <div className="inline-flex items-center justify-center rounded-2xl bg-foreground px-8 py-5 mb-8">
-              <img src={vendorPathLogo.url} alt="VendorPath by OpenShop" className="h-12 md:h-16 w-auto" />
-            </div>
+            <img src={vendorPathLogo.url} alt="VendorPath by OpenShop" className="h-16 md:h-24 w-auto mx-auto mb-8" />
 
 
             <h1 className="font-heading text-4xl md:text-6xl font-extrabold text-foreground mb-6">
