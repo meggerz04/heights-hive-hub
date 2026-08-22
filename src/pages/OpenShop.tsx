@@ -3,7 +3,7 @@ import { CheckCircle, ArrowRight, MessageSquare, MapPin, ClipboardList } from "l
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import vendorPathLogo from "@/assets/vendorpath-logo.png.asset.json";
+import vendorPathLogo from "@/assets/vendorpath-logo-black.png.asset.json";
 import openshopIcon from "@/assets/openshop-icon.png";
 
 const benefits = [
@@ -45,7 +45,10 @@ const OpenShop = () => {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <img src={vendorPathLogo.url} alt="VendorPath by OpenShop" className="h-16 md:h-24 mx-auto mb-8" />
+            <div className="inline-flex items-center justify-center rounded-2xl bg-foreground px-8 py-5 mb-8">
+              <img src={vendorPathLogo.url} alt="VendorPath by OpenShop" className="h-12 md:h-16 w-auto" />
+            </div>
+
 
             <h1 className="font-heading text-4xl md:text-6xl font-extrabold text-foreground mb-6">
               Become a Jersey City farmers market vendor — faster
