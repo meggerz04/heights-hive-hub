@@ -5,8 +5,9 @@ import openshopLogo from "@/assets/openshop-logo.png";
 const highlights = [
   {
     icon: Store,
-    title: "Start your business",
-    description: "Clear guidance for getting a local business off the ground — no guesswork.",
+    title: "Start Your Business",
+    description:
+      "A clear path from deciding to open a local business to opening your doors — no guesswork.",
   },
   {
     icon: Rocket,
@@ -40,8 +41,8 @@ const OpenShopFrontDoorSection = () => {
             OpenShop is the front door to starting your business
           </h2>
           <p className="font-body text-lg text-background/70 max-w-2xl mx-auto mb-12">
-            A growing set of tools that help everyday people open, run, and grow small
-            businesses in their community — starting right here in Jersey City.
+            A growing set of tools that help everyday people open storefronts in their
+            community — starting right here in Jersey City.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12 text-left">
