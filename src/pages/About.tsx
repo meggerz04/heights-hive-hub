@@ -48,7 +48,8 @@ const About = () => {
               About Us
             </span>
             <h1 className="font-heading text-4xl md:text-6xl font-extrabold text-foreground mb-6">
-              For The Heights,{" "}
+              For The Heights,
+              <br />
               <span className="text-primary">by The Heights</span>
             </h1>
             <p className="font-body text-lg text-muted-foreground leading-relaxed">
