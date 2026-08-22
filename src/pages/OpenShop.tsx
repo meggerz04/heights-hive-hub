@@ -4,7 +4,8 @@ import { CheckCircle, ArrowRight, MessageSquare, MapPin, ClipboardList } from "l
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import vendorPathLogo from "@/assets/vendorpath-logo-black.png.asset.json";
+import vendorPathLogo from "@/assets/vendorpath-logo-black.png";
+import vendorPathLogoAsset from "@/assets/vendorpath-logo-black.png.asset.json";
 import openshopIcon from "@/assets/openshop-icon.png";
 
 const benefits = [
@@ -40,7 +41,7 @@ const OpenShop = () => {
         title="VendorPath — Become a Jersey City Farmers Market Vendor"
         description="VendorPath, powered by OpenShop, gives you a step-by-step plan to become a Jersey City farmers market vendor: market matches, permits, and applications."
         path="/vendorpath"
-        image={vendorPathLogo.url}
+        image={vendorPathLogoAsset.url}
 
       />
       <Navbar />
@@ -53,7 +54,7 @@ const OpenShop = () => {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <img src={vendorPathLogo.url} alt="VendorPath by OpenShop" className="h-16 md:h-24 w-auto mx-auto mb-8" />
+            <img src={vendorPathLogo} alt="VendorPath by OpenShop" className="h-16 md:h-24 w-auto mx-auto mb-8" />
 
 
             <h1 className="font-heading text-4xl md:text-6xl font-extrabold text-foreground mb-6">
