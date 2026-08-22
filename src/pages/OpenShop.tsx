@@ -3,7 +3,7 @@ import { CheckCircle, ArrowRight, MessageSquare, MapPin, ClipboardList } from "l
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import vendorPathLogo from "@/assets/vendorpath-logo.png.asset.json";
+import vendorPathLogo from "@/assets/vendorpath-logo-black.png.asset.json";
 import openshopIcon from "@/assets/openshop-icon.png";
 
 const benefits = [
