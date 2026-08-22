@@ -14,7 +14,7 @@ const values = [
   },
   {
     icon: MapPin,
-    title: "Our Connection to the Heights",
+    title: "Our Connection to The Heights",
     description:
       "We live here. We shop here. We know the barista who remembers your order and the boutique owner who wraps every gift by hand. Jersey City Heights isn't just where we work — it's home.",
   },
@@ -48,8 +48,8 @@ const About = () => {
               About Us
             </span>
             <h1 className="font-heading text-4xl md:text-6xl font-extrabold text-foreground mb-6">
-              For the Heights,{" "}
-              <span className="text-primary">by the Heights</span>
+              For The Heights,{" "}
+              <span className="text-primary">by The Heights</span>
             </h1>
             <p className="font-body text-lg text-muted-foreground leading-relaxed">
               Shop The Heights is a local business activation platform that drives foot traffic, visibility, and collaboration among independent businesses in Jersey City Heights.
