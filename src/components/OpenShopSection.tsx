@@ -25,7 +25,7 @@ const OpenShopSection = () => {
             </p>
 
             <Link
-              to="/openshop"
+              to="/vendorpath"
               className="inline-flex items-center gap-3 bg-foreground text-primary-foreground font-body font-semibold px-8 py-4 rounded-full hover:opacity-90 transition-all hover:scale-105"
             >
               Explore VendorPath
