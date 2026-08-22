@@ -23,6 +23,8 @@ const OpenShopApp = () => {
         title="VendorPath App — Jersey City Market Vendor Guide"
         description="Your personalized VendorPath setup guide for becoming a Jersey City farmers market vendor."
         path="/vendorpath/app"
+        image="/og/vendorpath.jpg"
+
         noindex
       />
       <iframe

@@ -33,6 +33,8 @@ const About = () => {
         title="About Shop The Heights — Our Story & Mission"
         description="Why we started Shop The Heights, our connection to Jersey City Heights, and our mission to help independent local businesses get seen and thrive."
         path="/about"
+        image="/og/about.jpg"
+
       />
       <Navbar />
 
