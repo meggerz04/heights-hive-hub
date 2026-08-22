@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import srcDoc from "./openshop-app.html?raw";
+import Seo from "@/components/Seo";
 
 const OpenShopApp = () => {
   const iframeRef = useRef<HTMLIFrameElement>(null);
@@ -17,7 +18,14 @@ const OpenShopApp = () => {
   }, []);
 
   return (
-    <iframe
+    <>
+      <Seo
+        title="VendorPath App — Jersey City Market Vendor Guide"
+        description="Your personalized VendorPath setup guide for becoming a Jersey City farmers market vendor."
+        path="/vendorpath/app"
+        noindex
+      />
+      <iframe
       ref={iframeRef}
       srcDoc={srcDoc}
       title="OpenShop App"
@@ -30,8 +38,9 @@ const OpenShopApp = () => {
         margin: 0,
         padding: 0,
       }}
-      allow="clipboard-write"
-    />
+        allow="clipboard-write"
+      />
+    </>
   );
 };
 
