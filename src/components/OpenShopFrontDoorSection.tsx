@@ -41,8 +41,9 @@ const OpenShopFrontDoorSection = () => {
             OpenShop is the front door to opening a local business
           </h2>
           <p className="font-body text-lg text-background/70 max-w-2xl mx-auto mb-12">
-            A platform built to make the path to opening and operating a brick-and-mortar
+            A platform built to make the path to opening a brick-and-mortar
             business simpler — starting right here in Jersey City.
+
           </p>
 
 
