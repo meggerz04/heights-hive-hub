@@ -2,6 +2,7 @@ import { Heart } from "lucide-react";
 import InstagramIcon from "@/components/InstagramIcon";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo-transparent.png";
+import hewsBadge from "@/assets/hews-badge.png";
 
 const Footer = () => {
   return (
@@ -44,6 +45,15 @@ const Footer = () => {
               className="inline-flex items-center gap-2 font-body text-sm opacity-80 hover:opacity-100 transition-opacity"
             >
               <InstagramIcon className="w-5 h-5" /> @shoptheheightsjc
+            </a>
+            <a
+              href="https://www.hewsofjc.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block mt-6 w-28 hover:opacity-90 transition-opacity"
+              aria-label="Proud member of the Heights Entrepreneurial Women's Society"
+            >
+              <img src={hewsBadge} alt="Proud member of HEWS — Heights Entrepreneurial Women's Society" className="w-full h-auto" loading="lazy" />
             </a>
           </div>
         </div>
