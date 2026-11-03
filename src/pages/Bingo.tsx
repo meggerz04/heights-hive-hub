@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MapPin, ExternalLink } from "lucide-react";
+import { MapPin, ExternalLink, Sparkles } from "lucide-react";
 import Seo from "@/components/Seo";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -190,12 +190,14 @@ const Bingo = () => {
                     ))}
                   </div>
                 ))}
-                <div className="col-span-2 flex items-center justify-between rounded-lg bg-primary px-4 py-2">
-                  <span className="font-body text-sm font-semibold text-primary-foreground">
+                <div className="col-span-2 flex items-center justify-between rounded-lg bg-gradient-to-r from-primary via-primary to-accent px-4 py-3 shadow-[0_8px_24px_-8px_hsl(var(--primary)/0.6)] ring-1 ring-accent/40">
+                  <span className="font-body text-base font-bold text-primary-foreground flex items-center gap-2">
+                    <Sparkles className="w-4 h-4 text-accent" />
                     Whole card
                   </span>
-                  <span className="font-body text-sm font-bold text-primary-foreground">
+                  <span className="font-body text-base font-extrabold text-primary-foreground flex items-center gap-2">
                     25 entries
+                    <Sparkles className="w-4 h-4 text-accent" />
                   </span>
                 </div>
               </div>
