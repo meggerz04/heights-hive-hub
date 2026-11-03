@@ -254,7 +254,7 @@ const Bingo = () => {
               Participating Businesses
             </span>
             <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground">
-              20 neighborhood favorites
+              20 Neighborhood Favorites
             </h2>
             <p className="font-body text-muted-foreground mt-4 max-w-xl mx-auto">
               Pick up your card at any of these shops, and drop it off at any of them when you're
