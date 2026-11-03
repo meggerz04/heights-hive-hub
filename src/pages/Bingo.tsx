@@ -51,7 +51,7 @@ const Bingo = () => {
         title="Shop The Heights Bingo — Nov 27–29 | Shop The Heights"
         description="Shop local in Jersey City Heights from November 27–29, collect stickers from 20 participating businesses, and turn your bingo card into raffle entries to win prizes."
         path="/bingo"
-        image={bingoCardFront.url}
+        image={bingoCardFront}
       />
       <Navbar />
 
@@ -90,7 +90,7 @@ const Bingo = () => {
                 className="absolute inset-0 translate-x-3 translate-y-3 rounded-2xl bg-primary/10"
               />
               <img
-                src={bingoCardFront.url}
+                src={bingoCardFront}
                 alt="Shop The Heights Bingo card featuring all 20 participating businesses"
                 className="relative rounded-2xl border border-border shadow-lg w-full h-auto"
               />
