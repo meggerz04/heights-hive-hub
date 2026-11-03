@@ -3,7 +3,7 @@ import { MapPin, ExternalLink, Sparkles } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import InstagramIcon from "@/components/InstagramIcon";
-import BingoMap from "@/components/BingoMap";
+import BingoMap from "@/components/BingoMapClient";
 import { bingoBusinesses } from "@/data/bingoBusinesses";
 import bingoCardFront from "@/assets/bingo-card-2026-front.png";
 import hewsLogo from "@/assets/hews-logo.png";
