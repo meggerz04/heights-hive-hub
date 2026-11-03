@@ -303,7 +303,7 @@ const Bingo = () => {
                     className="absolute top-3 right-3 h-7 w-7 rounded-full opacity-90"
                   />
                 )}
-                <div className="flex items-center gap-3 mb-3">
+                <div className="flex items-center gap-3 mb-3 pr-8">
                   {biz.logo && (
                     <img
                       src={biz.logo}
