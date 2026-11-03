@@ -74,11 +74,29 @@ const Bingo = () => {
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
                 Win big for shopping local in JC Heights! Pick up a bingo card at any participating
                 business, collect stickers as you shop, and turn your card into raffle entries for
-                prizes. Presented by the Heights Entrepreneurial Women's Society.
+                prizes.
               </p>
               <p className="font-body text-muted-foreground leading-relaxed">
                 Every purchase is a vote for the neighborhood you want to live in.
               </p>
+              <div className="mt-8 flex items-center gap-4">
+                <img
+                  src={hewsLogo}
+                  alt="Heights Entrepreneurial Women's Society logo"
+                  className="h-14 w-14 rounded-full"
+                />
+                <p className="font-body text-sm text-muted-foreground leading-relaxed">
+                  Presented by the{" "}
+                  <a
+                    href="https://www.hewsofjc.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-foreground underline decoration-primary/40 underline-offset-4 hover:text-primary transition-colors"
+                  >
+                    Heights Entrepreneurial Women's Society
+                  </a>
+                </p>
+              </div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
