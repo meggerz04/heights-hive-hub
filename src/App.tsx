@@ -7,6 +7,7 @@ import Index from "./pages/Index.tsx";
 import About from "./pages/About.tsx";
 import OpenShop from "./pages/OpenShop.tsx";
 import OpenShopApp from "./pages/OpenShopApp.tsx";
+import Bingo from "./pages/Bingo.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/vendorpath" element={<OpenShop />} />
           <Route path="/vendorpath/app" element={<OpenShopApp />} />
+          <Route path="/bingo" element={<Bingo />} />
           <Route path="/openshop" element={<Navigate to="/vendorpath" replace />} />
           <Route path="/openshop/app" element={<Navigate to="/vendorpath/app" replace />} />
           <Route path="*" element={<NotFound />} />
