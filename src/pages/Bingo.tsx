@@ -280,7 +280,7 @@ const Bingo = () => {
                       src={biz.logo}
                       alt={`${biz.name} logo`}
                       loading="lazy"
-                      className="h-14 w-14 shrink-0 rounded-full border border-border bg-muted object-contain p-1"
+                      className="h-16 w-16 shrink-0 rounded-full border border-border object-cover"
                     />
                   )}
                   <h3 className="font-heading text-xl font-bold text-foreground">{biz.name}</h3>
