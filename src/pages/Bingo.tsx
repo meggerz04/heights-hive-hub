@@ -217,7 +217,7 @@ const Bingo = () => {
                     ))}
                   </div>
                 ))}
-                <div className="col-span-2 flex items-center justify-between rounded-lg bg-gradient-to-r from-primary via-primary to-accent px-4 py-3 shadow-[0_8px_24px_-8px_hsl(var(--primary)/0.6)] ring-1 ring-accent/40">
+                <div className="col-span-2 flex items-center justify-between rounded-lg bg-gradient-to-r from-primary via-primary to-accent px-4 py-3 shadow-[0_8px_24px_-8px_color-mix(in_oklab,var(--primary)_60%,transparent)] ring-1 ring-accent/40">
                   <span className="font-body text-base font-bold text-primary-foreground flex items-center gap-2">
                     <Sparkles className="w-4 h-4 text-accent" />
                     Whole card
