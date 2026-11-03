@@ -7,6 +7,7 @@ import Index from "./pages/Index.tsx";
 import About from "./pages/About.tsx";
 import OpenShop from "./pages/OpenShop.tsx";
 import OpenShopApp from "./pages/OpenShopApp.tsx";
+import Bingo from "./pages/Bingo.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
