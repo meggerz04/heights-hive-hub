@@ -4,7 +4,6 @@ import { Link } from "@/lib/router-compat";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import vendorPathLogo from "@/assets/vendorpath-logo-black.png";
-import vendorPathLogoAsset from "@/assets/vendorpath-logo-black.png.asset.json";
 import openshopIcon from "@/assets/openshop-icon.png";
 
 const benefits = [
