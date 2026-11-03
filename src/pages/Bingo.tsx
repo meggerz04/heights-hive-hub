@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import InstagramIcon from "@/components/InstagramIcon";
 import BingoMap from "@/components/BingoMap";
 import { bingoBusinesses } from "@/data/bingoBusinesses";
-import bingoCardFront from "@/assets/bingo-card-2026-front.png.asset.json";
+import bingoCardFront from "@/assets/bingo-card-2026-front.png";
 
 const steps = [
   {
