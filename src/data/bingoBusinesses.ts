@@ -9,6 +9,16 @@ import logoLaBodega from "@/assets/bingo-logos/la-bodega.png";
 import logoLilDove from "@/assets/bingo-logos/lil-dove.png";
 import logoLuckyHoneybee from "@/assets/bingo-logos/lucky-honeybee.jpg";
 import logoModcup from "@/assets/bingo-logos/modcup.jpeg";
+import logoBusyBee from "@/assets/bingo-logos/busy-bee.jpg";
+import logoMeowMiniMart from "@/assets/bingo-logos/meow-mini-mart.png";
+import logoRiverviewWine from "@/assets/bingo-logos/riverview-wine.png";
+import logoRudoPlants from "@/assets/bingo-logos/rudo-plants.png";
+import logoSolSpirit from "@/assets/bingo-logos/sol-spirit.png";
+import logoSparkPlace from "@/assets/bingo-logos/spark-place.jpeg";
+import logoSureThings from "@/assets/bingo-logos/sure-things.png";
+import logoTheAlps from "@/assets/bingo-logos/the-alps.jpg";
+import logoTheCliff from "@/assets/bingo-logos/the-cliff.png";
+import logoVarsityPilates from "@/assets/bingo-logos/varsity-pilates.png";
 
 /**
  * Shop The Heights Bingo 2026 participating businesses.
@@ -20,6 +30,7 @@ export const bingoBusinesses: BingoBusiness[] = [
     name: "Sure Things",
     address: "561 Palisade Ave, Jersey City, NJ 07307",
     website: "https://www.sure-things.com/",
+    logo: logoSureThings,
     instagram: "https://www.instagram.com/surethingsfintage/",
     latitude: 40.7477395,
     longitude: -74.0420276,
@@ -39,6 +50,7 @@ export const bingoBusinesses: BingoBusiness[] = [
     name: "Sol Spirit Yoga & Wellness",
     address: "523 Palisade Ave, Jersey City, NJ 07307",
     website: "https://solspiritstudios.com/",
+    logo: logoSolSpirit,
     instagram: "https://www.instagram.com/solspiritstudios/",
     latitude: 40.7464103,
     longitude: -74.0428887,
@@ -58,6 +70,7 @@ export const bingoBusinesses: BingoBusiness[] = [
     name: "Riverview Wine & Spirits",
     address: "43 Bowers St, Jersey City, NJ 07307",
     website: "https://www.riverviewwinejc.com/",
+    logo: logoRiverviewWine,
     instagram: "https://www.instagram.com/riverviewwinejc/",
     latitude: 40.745794,
     longitude: -74.044355,
@@ -67,6 +80,7 @@ export const bingoBusinesses: BingoBusiness[] = [
     name: "Rudo Plants & Home",
     address: "394 Palisade Ave, Jersey City, NJ 07307",
     website: "https://rudoplants.com/",
+    logo: logoRudoPlants,
     instagram: "https://www.instagram.com/rudoplants.home/",
     latitude: 40.7420719,
     longitude: -74.0452659,
@@ -105,6 +119,7 @@ export const bingoBusinesses: BingoBusiness[] = [
     name: "Busy Bee Organics",
     address: "451 Palisade Ave, Jersey City, NJ 07307",
     website: "https://busybeeorganics.com/",
+    logo: logoBusyBee,
     instagram: "https://www.instagram.com/busybeeorganics/",
     latitude: 40.7441659,
     longitude: -74.0444481,
@@ -134,6 +149,7 @@ export const bingoBusinesses: BingoBusiness[] = [
     name: "Meow Mini Mart",
     address: "57 Congress St, Jersey City, NJ 07307",
     website: "https://meowminimart.com/",
+    logo: logoMeowMiniMart,
     instagram: "https://www.instagram.com/meowminimart/",
     latitude: 40.7494742,
     longitude: -74.0426813,
@@ -153,6 +169,7 @@ export const bingoBusinesses: BingoBusiness[] = [
     name: "The Cliff",
     address: "38 Congress St, Jersey City, NJ 07307",
     website: "https://www.thecliffjc.com/",
+    logo: logoTheCliff,
     latitude: 40.74923,
     longitude: -74.0415301,
   },
@@ -181,6 +198,7 @@ export const bingoBusinesses: BingoBusiness[] = [
     name: "Spark Place",
     address: "411 Palisade Ave (1st floor), Jersey City, NJ 07307",
     website: "https://www.sparkplacejc.com/",
+    logo: logoSparkPlace,
     instagram: "https://www.instagram.com/sparkplacejc/",
     latitude: 40.7429394,
     longitude: -74.0449731,
@@ -190,6 +208,7 @@ export const bingoBusinesses: BingoBusiness[] = [
     name: "The Alps",
     address: "351 Palisade Ave, Jersey City, NJ 07307",
     website: "https://www.thealpsjc.com/",
+    logo: logoTheAlps,
     instagram: "https://www.instagram.com/thealpsjc/",
     latitude: 40.7407458,
     longitude: -74.046508,
@@ -199,6 +218,7 @@ export const bingoBusinesses: BingoBusiness[] = [
     name: "Varsity Pilates",
     address: "523 Palisade Ave, Jersey City, NJ 07307",
     website: "https://www.varsity-pilates.com/",
+    logo: logoVarsityPilates,
     instagram: "https://www.instagram.com/varsity.pilates/",
     latitude: 40.7464103,
     longitude: -74.0428887,
