@@ -1,4 +1,3 @@
-import Seo from "@/components/Seo";
 import { motion } from "framer-motion";
 import { Heart, MapPin, Target } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -29,12 +28,6 @@ const values = [
 const About = () => {
   return (
     <div className="min-h-screen">
-      <Seo
-        title="About Shop The Heights — Our Story & Mission"
-        description="Why we started Shop The Heights, our connection to Jersey City Heights, and our mission to help independent local businesses get seen and thrive."
-        path="/about"
-
-      />
       <Navbar />
 
       <section className="pt-32 pb-20 bg-background">

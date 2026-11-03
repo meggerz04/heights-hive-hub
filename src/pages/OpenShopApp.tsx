@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import Seo from "@/components/Seo";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -22,13 +21,6 @@ const OpenShopApp = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Seo
-        title="VendorPath App — Jersey City Market Vendor Guide"
-        description="Your personalized VendorPath setup guide for becoming a Jersey City farmers market vendor."
-        path="/vendorpath/app"
-        image="/og/vendorpath.jpg"
-        noindex
-      />
       <Navbar />
       <main className="flex-1 pt-16 bg-background">
         <iframe
