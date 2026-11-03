@@ -27,6 +27,7 @@ const Index = () => {
       />
       <Navbar />
       <HeroSection />
+      <BingoPromoSection />
       <OpenShopSection />
       <OpenShopFrontDoorSection />
       <CTABanner />
