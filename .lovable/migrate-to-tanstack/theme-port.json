@@ -1,0 +1,23 @@
+{
+  "customizations": [
+    { "token": "--background", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--foreground", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--card", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--popover", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--primary", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--secondary", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--muted", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--accent", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--border", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--input", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--ring", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--radius", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "--font-heading", "source": "src/index.css + tailwind.config.ts", "reappliedIn": "src/styles.css" },
+    { "token": "--font-body", "source": "src/index.css + tailwind.config.ts", "reappliedIn": "src/styles.css" },
+    { "token": "Google Fonts import (Lora, Nunito Sans)", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "body/heading font base rules", "source": "src/index.css", "reappliedIn": "src/styles.css" },
+    { "token": "animate-float", "source": "tailwind.config.ts", "reappliedIn": "src/styles.css" },
+    { "token": "container", "source": "tailwind.config.ts", "reappliedIn": "src/styles.css" },
+    { "token": "text-gradient", "source": "src/index.css", "reappliedIn": "src/styles.css" }
+  ]
+}

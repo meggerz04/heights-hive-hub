@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
 import { MapPin, ExternalLink, Sparkles } from "lucide-react";
-import Seo from "@/components/Seo";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import InstagramIcon from "@/components/InstagramIcon";
-import BingoMap from "@/components/BingoMap";
+import BingoMap from "@/components/BingoMapClient";
 import { bingoBusinesses } from "@/data/bingoBusinesses";
 import bingoCardFront from "@/assets/bingo-card-2026-front.png";
 import hewsLogo from "@/assets/hews-logo.png";
@@ -48,39 +47,6 @@ const entryChart: [number, number][] = [
 const Bingo = () => {
   return (
     <div className="min-h-screen">
-      <Seo
-        title="Shop The Heights Bingo — Nov 27–29 | Shop The Heights"
-        description="Shop local in Jersey City Heights from November 27–29, collect stickers from 20 participating businesses, and turn your bingo card into raffle entries to win prizes."
-        path="/bingo"
-        image="/og-bingo.png"
-        jsonLd={{
-          "@context": "https://schema.org",
-          "@type": "Event",
-          name: "Shop The Heights Bingo",
-          description:
-            "Shop local in Jersey City Heights from November 27–29, collect stickers from 20 participating businesses, and turn your bingo card into raffle entries to win prizes.",
-          startDate: "2026-11-27",
-          endDate: "2026-11-29",
-          eventStatus: "https://schema.org/EventScheduled",
-          location: {
-            "@type": "Place",
-            name: "Jersey City Heights",
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: "Jersey City",
-              addressRegion: "NJ",
-              addressCountry: "US",
-            },
-          },
-          organizer: {
-            "@type": "Organization",
-            name: "Heights Entrepreneurial Women's Society (HEWS)",
-            url: "https://www.hewsofjc.com",
-          },
-          image: "https://shoptheheightsjc.com/og-bingo.png",
-          url: "https://shoptheheightsjc.com/bingo",
-        }}
-      />
       <Navbar />
 
       {/* Hero */}
@@ -217,7 +183,7 @@ const Bingo = () => {
                     ))}
                   </div>
                 ))}
-                <div className="col-span-2 flex items-center justify-between rounded-lg bg-gradient-to-r from-primary via-primary to-accent px-4 py-3 shadow-[0_8px_24px_-8px_hsl(var(--primary)/0.6)] ring-1 ring-accent/40">
+                <div className="col-span-2 flex items-center justify-between rounded-lg bg-gradient-to-r from-primary via-primary to-accent px-4 py-3 shadow-[0_8px_24px_-8px_color-mix(in_oklab,var(--primary)_60%,transparent)] ring-1 ring-accent/40">
                   <span className="font-body text-base font-bold text-primary-foreground flex items-center gap-2">
                     <Sparkles className="w-4 h-4 text-accent" />
                     Whole card

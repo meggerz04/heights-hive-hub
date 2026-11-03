@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from "@/lib/router-compat";
 import { Menu, X } from "lucide-react";
 import InstagramIcon from "@/components/InstagramIcon";
 import { motion, AnimatePresence } from "framer-motion";

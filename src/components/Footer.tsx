@@ -1,6 +1,6 @@
 import { Heart } from "lucide-react";
 import InstagramIcon from "@/components/InstagramIcon";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/router-compat";
 import logo from "@/assets/logo-transparent.png";
 import hewsBadge from "@/assets/hews-badge.png";
 
