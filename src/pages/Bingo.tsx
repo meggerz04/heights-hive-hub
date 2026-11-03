@@ -8,6 +8,8 @@ import { bingoBusinesses } from "@/data/bingoBusinesses";
 import bingoCardFront from "@/assets/bingo-card-2026-front.png";
 import hewsLogo from "@/assets/hews-logo.png";
 
+const NON_HEWS_IDS = new Set(["lucky-honeybee", "the-alps", "hybrid", "the-cliff", "modcup"]);
+
 const steps = [
   {
     title: "Pick up your card",
@@ -290,9 +292,18 @@ const Bingo = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: (i % 3) * 0.1 }}
-                className="bg-background rounded-2xl border border-border p-6 flex flex-col hover:border-primary/30 transition-all hover:shadow-lg"
+                className="relative bg-background rounded-2xl border border-border p-6 flex flex-col hover:border-primary/30 transition-all hover:shadow-lg"
               >
-                <div className="flex items-center gap-3 mb-3">
+                {!NON_HEWS_IDS.has(biz.id) && (
+                  <img
+                    src={hewsLogo}
+                    alt="HEWS member"
+                    title="HEWS member"
+                    loading="lazy"
+                    className="absolute top-3 right-3 h-7 w-7 rounded-full opacity-90"
+                  />
+                )}
+                <div className="flex items-center gap-3 mb-3 pr-8">
                   {biz.logo && (
                     <img
                       src={biz.logo}
