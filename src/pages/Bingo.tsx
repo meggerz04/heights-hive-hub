@@ -232,8 +232,8 @@ const Bingo = () => {
       <section className="py-16 bg-primary">
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <p className="font-heading text-2xl md:text-3xl font-semibold text-primary-foreground leading-snug">
-            When you shop here, more of your dollar stays here — supporting the neighbors,
-            friendships, and storefronts that make The Heights feel like home.
+            When you shop local, you invest in The Heights — supporting the people behind our
+            storefronts and keeping our neighborhood vibrant, connected, and full of character.
           </p>
         </div>
       </section>
