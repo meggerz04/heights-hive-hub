@@ -258,7 +258,7 @@ const Bingo = () => {
             </h2>
             <p className="font-body text-muted-foreground mt-4 max-w-xl mx-auto">
               Pick up your card at any of these shops, and drop it off at any of them when you're
-              done.
+              done (by 11/29).
             </p>
           </motion.div>
 
