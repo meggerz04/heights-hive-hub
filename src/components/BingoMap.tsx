@@ -33,6 +33,7 @@ export type BingoBusiness = {
   address: string;
   website?: string;
   instagram?: string;
+  logo?: string;
   latitude: number;
   longitude: number;
 };

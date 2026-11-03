@@ -1,4 +1,14 @@
 import type { BingoBusiness } from "@/components/BingoMap";
+import logoAbake from "@/assets/bingo-logos/abake-books.png";
+import logoChocOPain from "@/assets/bingo-logos/choc-o-pain.jpg";
+import logoCocoa from "@/assets/bingo-logos/cocoa-bakery.jpeg";
+import logoHairRoom from "@/assets/bingo-logos/hair-room.png";
+import logoHudsonCityKids from "@/assets/bingo-logos/hudson-city-kids.png";
+import logoHybrid from "@/assets/bingo-logos/hybrid.png";
+import logoLaBodega from "@/assets/bingo-logos/la-bodega.png";
+import logoLilDove from "@/assets/bingo-logos/lil-dove.png";
+import logoLuckyHoneybee from "@/assets/bingo-logos/lucky-honeybee.jpg";
+import logoModcup from "@/assets/bingo-logos/modcup.jpeg";
 
 /**
  * Shop The Heights Bingo 2026 participating businesses.
