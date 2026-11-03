@@ -1,4 +1,14 @@
 import type { BingoBusiness } from "@/components/BingoMap";
+import logoAbake from "@/assets/bingo-logos/abake-books.png";
+import logoChocOPain from "@/assets/bingo-logos/choc-o-pain.jpg";
+import logoCocoa from "@/assets/bingo-logos/cocoa-bakery.jpeg";
+import logoHairRoom from "@/assets/bingo-logos/hair-room.png";
+import logoHudsonCityKids from "@/assets/bingo-logos/hudson-city-kids.png";
+import logoHybrid from "@/assets/bingo-logos/hybrid.png";
+import logoLaBodega from "@/assets/bingo-logos/la-bodega.png";
+import logoLilDove from "@/assets/bingo-logos/lil-dove.png";
+import logoLuckyHoneybee from "@/assets/bingo-logos/lucky-honeybee.jpg";
+import logoModcup from "@/assets/bingo-logos/modcup.jpeg";
 
 /**
  * Shop The Heights Bingo 2026 participating businesses.
@@ -19,6 +29,7 @@ export const bingoBusinesses: BingoBusiness[] = [
     name: "The Hair Room JC",
     address: "467 Palisade Ave, Jersey City, NJ 07307",
     website: "https://www.thehairroomjc.com/",
+    logo: logoHairRoom,
     instagram: "https://www.instagram.com/thehairroomjerseycity/",
     latitude: 40.7445668,
     longitude: -74.0440556,
@@ -37,6 +48,7 @@ export const bingoBusinesses: BingoBusiness[] = [
     name: "Lucky Honeybee",
     address: "487 Palisade Ave (lower level), Jersey City, NJ 07307",
     website: "https://www.theluckyhoneybee.com/",
+    logo: logoLuckyHoneybee,
     instagram: "https://www.instagram.com/theluckyhoneybee/",
     latitude: 40.7452823,
     longitude: -74.0437592,
@@ -64,6 +76,7 @@ export const bingoBusinesses: BingoBusiness[] = [
     name: "La Bodega Latin Cuisine & Market",
     address: "407 Palisade Ave, Jersey City, NJ 07307",
     instagram: "https://www.instagram.com/labodegajc/",
+    logo: logoLaBodega,
     latitude: 40.7429394,
     longitude: -74.0449731,
   },
@@ -72,6 +85,7 @@ export const bingoBusinesses: BingoBusiness[] = [
     name: "Cocoa Bakery & Cafe",
     address: "475 Central Ave, Jersey City, NJ 07307",
     website: "https://www.cocoabakerycafe.com/",
+    logo: logoCocoa,
     instagram: "https://www.instagram.com/cocoabakeryjc/",
     latitude: 40.750754,
     longitude: -74.046234,
@@ -81,6 +95,7 @@ export const bingoBusinesses: BingoBusiness[] = [
     name: "Modcup Coffee",
     address: "479 Palisade Ave, Jersey City, NJ 07307",
     website: "https://www.modcup.com/",
+    logo: logoModcup,
     instagram: "https://www.instagram.com/modcupcoffee/",
     latitude: 40.7450264,
     longitude: -74.0439021,
@@ -99,6 +114,7 @@ export const bingoBusinesses: BingoBusiness[] = [
     name: "Hybrid",
     address: "573 Palisade Ave, Jersey City, NJ 07307",
     website: "https://www.hybridcoffee.co/",
+    logo: logoHybrid,
     instagram: "https://www.instagram.com/drinkhybrid/",
     latitude: 40.7480708,
     longitude: -74.0418135,
@@ -108,6 +124,7 @@ export const bingoBusinesses: BingoBusiness[] = [
     name: "Choc O Pain French Bakery & Cafe",
     address: "330 Palisade Ave, Jersey City, NJ 07307",
     website: "https://www.chocopainbakery.com/",
+    logo: logoChocOPain,
     instagram: "https://www.instagram.com/chocopainbakery/",
     latitude: 40.7401965,
     longitude: -74.0466134,
@@ -126,6 +143,7 @@ export const bingoBusinesses: BingoBusiness[] = [
     name: "Lil' Dove Cafe",
     address: "589 Palisade Ave, Jersey City, NJ 07307",
     website: "https://lildovecafe.com/",
+    logo: logoLilDove,
     instagram: "https://www.instagram.com/lildovecafejc/",
     latitude: 40.7486598,
     longitude: -74.0415618,
@@ -143,6 +161,7 @@ export const bingoBusinesses: BingoBusiness[] = [
     name: "Hudson City Kids",
     address: "474 Central Ave, Jersey City, NJ 07307",
     website: "https://www.hudsoncitykids.com/",
+    logo: logoHudsonCityKids,
     instagram: "https://www.instagram.com/hudsoncitykids/",
     latitude: 40.7510866,
     longitude: -74.0457472,
@@ -152,6 +171,7 @@ export const bingoBusinesses: BingoBusiness[] = [
     name: "Àbáké Books & Cafe",
     address: "2 Webster Ave, Jersey City, NJ 07307",
     website: "https://abakebooks.com/",
+    logo: logoAbake,
     instagram: "https://www.instagram.com/abake.cafe/",
     latitude: 40.738531,
     longitude: -74.050313,

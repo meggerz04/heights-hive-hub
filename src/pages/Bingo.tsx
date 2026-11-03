@@ -272,7 +272,17 @@ const Bingo = () => {
                 transition={{ delay: (i % 3) * 0.1 }}
                 className="bg-background rounded-2xl border border-border p-6 flex flex-col hover:border-primary/30 transition-all hover:shadow-lg"
               >
-                <h3 className="font-heading text-xl font-bold text-foreground mb-3">{biz.name}</h3>
+                <div className="flex items-center gap-3 mb-3">
+                  {biz.logo && (
+                    <img
+                      src={biz.logo}
+                      alt={`${biz.name} logo`}
+                      loading="lazy"
+                      className="h-14 w-14 shrink-0 rounded-full border border-border bg-muted object-contain p-1"
+                    />
+                  )}
+                  <h3 className="font-heading text-xl font-bold text-foreground">{biz.name}</h3>
+                </div>
                 <a
                   href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(biz.address)}`}
                   target="_blank"
