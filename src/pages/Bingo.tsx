@@ -62,12 +62,12 @@ const Bingo = () => {
                 Fri. 11/27 – Sun. 11/29
               </span>
               <h1 className="font-heading text-4xl md:text-5xl font-bold text-foreground leading-tight mb-6">
-                Shop The Heights Bingo
+                Shop Small. Win Big.
               </h1>
               <p className="font-body text-lg text-muted-foreground leading-relaxed mb-6">
-                Win big for shopping local in JC Heights! Pick up a bingo card at any participating
-                business, collect stickers as you shop, and turn your card into raffle entries for
-                prizes.
+                Explore The Heights, support your favorite local businesses, and discover a few new
+                ones. Pick up a BINGO card at any participating business, collect stickers as you
+                shop, and earn raffle entries for prizes.
               </p>
               <p className="font-body text-muted-foreground leading-relaxed">
                 Every purchase is a vote for the neighborhood you want to live in.
