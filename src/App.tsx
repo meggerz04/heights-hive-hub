@@ -23,6 +23,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/vendorpath" element={<OpenShop />} />
           <Route path="/vendorpath/app" element={<OpenShopApp />} />
+          <Route path="/bingo" element={<Bingo />} />
           <Route path="/openshop" element={<Navigate to="/vendorpath" replace />} />
           <Route path="/openshop/app" element={<Navigate to="/vendorpath/app" replace />} />
           <Route path="*" element={<NotFound />} />
