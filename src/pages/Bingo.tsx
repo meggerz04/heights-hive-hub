@@ -173,17 +173,21 @@ const Bingo = () => {
                 sticker earns you another raffle entry — and a full card is worth 25 entries.
               </p>
               <div className="grid grid-cols-2 gap-2">
-                {entryChart.map(([stickers, entries]) => (
-                  <div
-                    key={stickers}
-                    className="flex items-center justify-between rounded-lg border border-border bg-card px-4 py-2"
-                  >
-                    <span className="font-body text-sm font-semibold text-foreground">
-                      {stickers} stickers
-                    </span>
-                    <span className="font-body text-sm text-primary font-semibold">
-                      {entries} {entries === 1 ? "entry" : "entries"}
-                    </span>
+                {[entryChart.slice(0, 7), entryChart.slice(7)].map((column, colIndex) => (
+                  <div key={colIndex} className="flex flex-col gap-2">
+                    {column.map(([stickers, entries]) => (
+                      <div
+                        key={stickers}
+                        className="flex items-center justify-between rounded-lg border border-border bg-card px-4 py-2"
+                      >
+                        <span className="font-body text-sm font-semibold text-foreground">
+                          {stickers} stickers
+                        </span>
+                        <span className="font-body text-sm text-primary font-semibold">
+                          {entries} {entries === 1 ? "entry" : "entries"}
+                        </span>
+                      </div>
+                    ))}
                   </div>
                 ))}
                 <div className="col-span-2 flex items-center justify-between rounded-lg bg-primary px-4 py-2">
