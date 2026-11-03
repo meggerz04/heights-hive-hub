@@ -78,7 +78,7 @@ const Bingo = () => {
                 <img
                   src={hewsLogo}
                   alt="Heights Entrepreneurial Women's Society logo"
-                  className="h-14 w-14 rounded-full"
+                  className="h-20 w-20 rounded-full"
                 />
                 <p className="font-body text-sm text-muted-foreground leading-relaxed">
                   Presented by the{" "}
@@ -300,7 +300,7 @@ const Bingo = () => {
                     alt="HEWS member"
                     title="HEWS member"
                     loading="lazy"
-                    className="absolute top-3 right-3 h-7 w-7 rounded-full opacity-90"
+                    className="absolute top-3 right-3 h-9 w-9 rounded-full opacity-90"
                   />
                 )}
                 <div className="flex items-center gap-3 mb-3 pr-8">
