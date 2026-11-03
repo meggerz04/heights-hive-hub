@@ -263,7 +263,9 @@ const Bingo = () => {
           </motion.div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {bingoBusinesses.map((biz, i) => (
+            {[...bingoBusinesses]
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .map((biz, i) => (
               <motion.div
                 key={biz.id}
                 initial={{ opacity: 0, y: 30 }}
