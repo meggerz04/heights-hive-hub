@@ -325,6 +325,11 @@ const Bingo = () => {
                     {biz.address}
                   </span>
                 </a>
+                {biz.id === "rudo-plants" && (
+                  <p className="font-body text-xs text-muted-foreground italic leading-relaxed mb-4 -mt-2">
+                    Popping up at Varsity Pilates while their shop is under construction
+                  </p>
+                )}
                 <div className="mt-auto flex flex-wrap gap-2">
                   {biz.website && (
                     <a
