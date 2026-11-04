@@ -9,7 +9,7 @@ import logoLaBodega from "@/assets/bingo-logos/la-bodega.png";
 import logoLilDove from "@/assets/bingo-logos/lil-dove.png";
 import logoLuckyHoneybee from "@/assets/bingo-logos/lucky-honeybee.jpg";
 import logoModcup from "@/assets/bingo-logos/modcup.jpeg";
-import logoBusyBee from "@/assets/bingo-logos/busy-bee.jpg";
+import logoBusyBee from "@/assets/bingo-logos/busy-bee-primary-logo.jpg.asset.json";
 import logoMeowMiniMart from "@/assets/bingo-logos/meow-mini-mart.png";
 import logoRiverviewWine from "@/assets/bingo-logos/riverview-wine.png";
 import logoRudoPlants from "@/assets/bingo-logos/rudo-plants.png";
@@ -119,7 +119,7 @@ export const bingoBusinesses: BingoBusiness[] = [
     name: "Busy Bee Organics",
     address: "451 Palisade Ave, Jersey City, NJ 07307",
     website: "https://busybeeorganics.com/",
-    logo: logoBusyBee,
+    logo: logoBusyBee.url,
     instagram: "https://www.instagram.com/busybeeorganics/",
     latitude: 40.7441659,
     longitude: -74.0444481,
