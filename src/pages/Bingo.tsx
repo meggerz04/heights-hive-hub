@@ -25,7 +25,7 @@ const steps = [
   },
   {
     title: "Drop off & win",
-    text: "Drop off your card by 11/29 at any participating location to be entered to win 1 of 5 prizes!",
+    text: "Drop off your card by 11/29 at any participating location to be entered to win 1 of 3 prizes!",
   },
 ];
 
