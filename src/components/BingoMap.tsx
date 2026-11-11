@@ -68,7 +68,7 @@ const popupHtml = (s: BingoBusiness) => {
 const BingoMap = ({
   businesses,
   heading = "Plan your route.",
-  intro = "All 20 participating businesses are right here in The Heights. Tap a pin for the address and a link to their site.",
+  intro = "20 local businesses. One 1.3-mile stroll. Grab a friend, walk off that Thanksgiving feast, and shop your way through The Heights. Tap a pin for the address and a link to their site.",
   ariaLabel = "Map of Shop The Heights Bingo participating businesses in Jersey City Heights",
 }: {
   businesses: BingoBusiness[];
